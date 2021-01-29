@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .banner{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url(./vendors/bg.jpg);
+            background-size: cover;
+            background-position: bottom;
+        }
+        .banner .clouds {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .banner .clouds img{
+            position: absolute;
+            bottom: 0;
+            max-width: 100%;
+            animation: animate calc(8s *var(--i)) linear infinite;
+        }
+        @keyframes animate{
+            0%{
+                transform: translateX(-100%);
+            }
+            100%{
+                transform: translateX(100%);
+            }
+        }
+        section{
+            position: relative;
+            padding: 75px 100px;
+  
+        }
+        section h2{
+            font-size: 2.5em;
+            margin-bottom: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        
+        <div class="clouds">
+            <img src="./vendors/cloud1.png" style="--i:1;">
+            <img src="./vendors/cloud2.png" style="--i:2;">
+            <img src="./vendors/cloud3.png" style="--i:3;">
+            <img src="./vendors/cloud4.png" style="--i:4;">
+            <img src="./vendors/cloud5.png" style="--i:5;">
+            
+
+        </div>
+    </div>
+
+    <section>
+        <h2>Hello Guys </h2>
+        <p>
+            <h5>My name is Ankit Agarwal. Welcome to my website.Hope u liked my work.</h5>
+            <br>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+
+        </p>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+   <div id="map" style="width: 80%; height: 500px;margin-top: 100px;">
+       Hello
+   </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=localContext&v=beta&key=AIzaSyAfVYzj9Q9nqlZKYx45-B6vIrwaCfyu1pU&callback=initMap" defer>
+    </script>
+
+    <script>
+        // Instantiate LocalContextMapView.
+        function initMap() {
+        const localContextMapView = new google.maps.localContext.LocalContextMapView({
+            element: document.querySelector('#map'),
+            placeTypePreferences: ['restaurant'],
+            maxPlaceCount: 12,
+        });
+
+        // Set inner map options.
+        localContextMapView.map.setOptions({
+            center: {lat:23.857833, lng: 86.156605},
+            zoom: 15
+        });
+        }
+</script> -->
+</body>
+
+</html>
